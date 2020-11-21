@@ -5,7 +5,9 @@
 :numbered!:
 **About arc42**
 
+
 [role="lead"]
+= image:arc42-logo.png[arc42] Template
 arc42, the Template for documentation of
 software and system architecture.
 

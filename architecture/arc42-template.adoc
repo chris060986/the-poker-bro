@@ -3,7 +3,7 @@
 //
 // ====================================
 
-= image:arc42-logo.png[arc42] Template
+//= image:arc42-logo.png[arc42] Template
 // toc-title definition MUST follow document title without blank line!
 :toc-title: Table of Contents
 
@@ -26,7 +26,7 @@ endif::basebackend-html[]
 include::src/config.adoc[]
 
 
-include::src/about-arc42.adoc[]
+include::src/00_the_poker_bro_intro.adoc[]
 
 // horizontal line
 ***
@@ -85,4 +85,6 @@ include::src/11_technical_risks.adoc[]
 // 12. Glossary
 include::src/12_glossary.adoc[]
 
-
+<<<<
+// 13. About arc42
+include::src/about-arc42.adoc[]
