@@ -65,278 +65,278 @@ A poker review software
 
 
 
-[options="header",cols="1,2,2"]
+[options="header",cols="1,2"]
 |===
-|Role/Name|Contact|Expectations
-| _<Role-1>_ | _<Contact-1>_ | _<Expectation-1>_
-| _<Role-2>_ | _<Contact-2>_ | _<Expectation-2>_
+|Role/Name|Expectations
+| _Poker Player_ | _<Expectation-1>_
+| _Software Architect_ | _<Expectation-2>_
 |===
 
 
-<<<<
-// 2. Architecture Constraints
-[[section-architecture-constraints]]
-== Architecture Constraints
+// <<<<
+// // 2. Architecture Constraints
+// [[section-architecture-constraints]]
+// == Architecture Constraints
 
-<<<<
-// 3. System Scope and Context
-[[section-system-scope-and-context]]
-== System Scope and Context
+// <<<<
+// // 3. System Scope and Context
+// [[section-system-scope-and-context]]
+// == System Scope and Context
 
 
-=== Business Context
+// === Business Context
 
 
-**<Diagram or Table>**
+// **<Diagram or Table>**
 
-**<optionally: Explanation of external domain interfaces>**
+// **<optionally: Explanation of external domain interfaces>**
 
-=== Technical Context
+// === Technical Context
 
 
-**<Diagram or Table>**
+// **<Diagram or Table>**
 
-**<optionally: Explanation of technical interfaces>**
+// **<optionally: Explanation of technical interfaces>**
 
-**<Mapping Input/Output to Channels>**
+// **<Mapping Input/Output to Channels>**
 
-<<<<
-// 4. Solution Strategy
-[[section-solution-strategy]]
-== Solution Strategy
+// <<<<
+// // 4. Solution Strategy
+// [[section-solution-strategy]]
+// == Solution Strategy
 
 
 
-<<<<
-// 5. Building Block View
-[[section-building-block-view]]
+// <<<<
+// // 5. Building Block View
+// [[section-building-block-view]]
 
 
-== Building Block View
+// == Building Block View
 
 
 
-=== Whitebox Overall System
+// === Whitebox Overall System
 
 
 
-_**<Overview Diagram>**_
+// _**<Overview Diagram>**_
 
-Motivation::
+// Motivation::
 
-_<text explanation>_
+// _<text explanation>_
 
 
-Contained Building Blocks::
-_<Description of contained building block (black boxes)>_
+// Contained Building Blocks::
+// _<Description of contained building block (black boxes)>_
 
-Important Interfaces::
-_<Description of important interfaces>_
+// Important Interfaces::
+// _<Description of important interfaces>_
 
 
 
 
-==== <Name black box 1>
+// ==== <Name black box 1>
 
 
 
-_<Purpose/Responsibility>_
+// _<Purpose/Responsibility>_
 
-_<Interface(s)>_
+// _<Interface(s)>_
 
-_<(Optional) Quality/Performance Characteristics>_
+// _<(Optional) Quality/Performance Characteristics>_
 
-_<(Optional) Directory/File Location>_
+// _<(Optional) Directory/File Location>_
 
-_<(Optional) Fulfilled Requirements>_
+// _<(Optional) Fulfilled Requirements>_
 
-_<(optional) Open Issues/Problems/Risks>_
+// _<(optional) Open Issues/Problems/Risks>_
 
 
 
 
-==== <Name black box 2>
+// ==== <Name black box 2>
 
-_<black box template>_
+// _<black box template>_
 
-==== <Name black box n>
+// ==== <Name black box n>
 
-_<black box template>_
+// _<black box template>_
 
 
-==== <Name interface 1>
+// ==== <Name interface 1>
 
-...
+// ...
 
-==== <Name interface m>
+// ==== <Name interface m>
 
 
 
-=== Level 2
+// === Level 2
 
 
 
-==== White Box _<building block 1>_
+// ==== White Box _<building block 1>_
 
 
 
-_<white box template>_
+// _<white box template>_
 
-==== White Box _<building block 2>_
+// ==== White Box _<building block 2>_
 
 
-_<white box template>_
+// _<white box template>_
 
-...
+// ...
 
-==== White Box _<building block m>_
+// ==== White Box _<building block m>_
 
 
-_<white box template>_
+// _<white box template>_
 
 
 
-=== Level 3
+// === Level 3
 
 
 
 
-==== White Box <_building block x.1_>
+// ==== White Box <_building block x.1_>
 
 
 
 
-_<white box template>_
+// _<white box template>_
 
 
-==== White Box <_building block x.2_>
+// ==== White Box <_building block x.2_>
 
-_<white box template>_
+// _<white box template>_
 
 
 
-==== White Box <_building block y.1_>
+// ==== White Box <_building block y.1_>
 
-_<white box template>_
+// _<white box template>_
 
 
-<<<<
-// 6. Runtime View
-[[section-runtime-view]]
-== Runtime View
+// <<<<
+// // 6. Runtime View
+// [[section-runtime-view]]
+// == Runtime View
 
 
 
 
-=== <Runtime Scenario 1>
+// === <Runtime Scenario 1>
 
 
-* _<insert runtime diagram or textual description of the scenario>_
-* _<insert description of the notable aspects of the interactions between the
-building block instances depicted in this diagram.>_
+// * _<insert runtime diagram or textual description of the scenario>_
+// * _<insert description of the notable aspects of the interactions between the
+// building block instances depicted in this diagram.>_
 
-=== <Runtime Scenario 2>
+// === <Runtime Scenario 2>
 
-=== ...
+// === ...
 
-=== <Runtime Scenario n>
+// === <Runtime Scenario n>
 
 
-<<<<
-// 7. Deployment View
-[[section-deployment-view]]
+// <<<<
+// // 7. Deployment View
+// [[section-deployment-view]]
 
 
-== Deployment View
+// == Deployment View
 
 
 
-=== Infrastructure Level 1
+// === Infrastructure Level 1
 
 
 
-_**<Overview Diagram>**_
+// _**<Overview Diagram>**_
 
-Motivation::
+// Motivation::
 
-_<explanation in text form>_
+// _<explanation in text form>_
 
-Quality and/or Performance Features::
+// Quality and/or Performance Features::
 
-_<explanation in text form>_
+// _<explanation in text form>_
 
-Mapping of Building Blocks to Infrastructure::
-_<description of the mapping>_
+// Mapping of Building Blocks to Infrastructure::
+// _<description of the mapping>_
 
 
-=== Infrastructure Level 2
+// === Infrastructure Level 2
 
 
 
-==== _<Infrastructure Element 1>_
+// ==== _<Infrastructure Element 1>_
 
-_<diagram + explanation>_
+// _<diagram + explanation>_
 
-==== _<Infrastructure Element 2>_
+// ==== _<Infrastructure Element 2>_
 
-_<diagram + explanation>_
+// _<diagram + explanation>_
 
-...
+// ...
 
-==== _<Infrastructure Element n>_
+// ==== _<Infrastructure Element n>_
 
-_<diagram + explanation>_
+// _<diagram + explanation>_
 
-<<<<
-// 8. Concepts
-[[section-concepts]]
-== Cross-cutting Concepts
+// <<<<
+// // 8. Concepts
+// [[section-concepts]]
+// == Cross-cutting Concepts
 
 
 
 
 
-=== _<Concept 1>_
+// === _<Concept 1>_
 
-_<explanation>_
+// _<explanation>_
 
 
 
-=== _<Concept 2>_
+// === _<Concept 2>_
 
-_<explanation>_
+// _<explanation>_
 
-...
+// ...
 
-=== _<Concept n>_
+// === _<Concept n>_
 
-_<explanation>_
+// _<explanation>_
 
-<<<<
-// 9. Design Decisions
-[[section-design-decisions]]
-== Design Decisions
+// <<<<
+// // 9. Design Decisions
+// [[section-design-decisions]]
+// == Design Decisions
 
 
 
 
 
-<<<<
-// 10. Quality Scenarios
-[[section-quality-scenarios]]
-== Quality Requirements
+// <<<<
+// // 10. Quality Scenarios
+// [[section-quality-scenarios]]
+// == Quality Requirements
 
 
-=== Quality Tree
+// === Quality Tree
 
 
-=== Quality Scenarios
+// === Quality Scenarios
 
 
-<<<<
-// 11. Technical Risks
-[[section-technical-risks]]
-== Risks and Technical Debts
+// <<<<
+// // 11. Technical Risks
+// [[section-technical-risks]]
+// == Risks and Technical Debts
 
 
 
