@@ -26,7 +26,9 @@ endif::basebackend-html[]
 include::src/config.adoc[]
 
 
-include::src/00_the_poker_bro_intro.adoc[]
+= The Poker Bro
+
+A poker review software
 
 // horizontal line
 ***
