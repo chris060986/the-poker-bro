@@ -1,0 +1,385 @@
+// header file for arc42-template,
+// including all help texts
+//
+// ====================================
+
+//= image:arc42-logo.png[arc42] Template
+// toc-title definition MUST follow document title without blank line!
+:toc-title: Table of Contents
+
+//additional style for arc42 help callouts
+ifdef::basebackend-html[]
+++++
+<!--<style>
+.arc42help {font-size:small; width: 14px; height: 16px; overflow: hidden; position: absolute; right: 0px; padding: 2px 0px 3px 2px;}
+.arc42help::before {content: "?";}
+.arc42help:hover {width:auto; height: auto; z-index: 100; padding: 10px;}
+.arc42help:hover::before {content: "";}
+@media print {
+	.arc42help {display:hidden;}
+}
+</style>-->
+++++
+endif::basebackend-html[]
+
+// asciidoc settings for EN (English)
+// ==================================
+:toc-title: table of contents
+
+// enable table-of-contents
+:toc:
+
+// where are images located?
+:imagesdir: ./images
+
+
+= The Poker Bro
+
+A poker review software
+
+// horizontal line
+***
+
+
+
+
+// numbering from here on
+:numbered:
+
+<<<<
+// 1. Introduction and Goals
+[[section-introduction-and-goals]]
+== Introduction and Goals
+
+
+
+=== Requirements Overview
+
+
+
+=== Quality Goals
+
+
+
+=== Stakeholders
+
+
+
+[options="header",cols="1,2"]
+|===
+|Role/Name|Expectations
+| _Poker Player_ | As a poker player I want to review and analyze my plays. This is mainly done when finished playing but sometimes a replay should be able just after the hand is finished.  
+| _Software Architect_ | As a software architect I want to learn something new. Interest are mainly in cloud technologies and several programming languages. The PokerBro app is used as a real life scenario to build knowledge and having fun in trying something new.
+|===
+
+
+// <<<<
+// // 2. Architecture Constraints
+// [[section-architecture-constraints]]
+// == Architecture Constraints
+
+// <<<<
+// // 3. System Scope and Context
+// [[section-system-scope-and-context]]
+// == System Scope and Context
+
+
+// === Business Context
+
+
+// **<Diagram or Table>**
+
+// **<optionally: Explanation of external domain interfaces>**
+
+// === Technical Context
+
+
+// **<Diagram or Table>**
+
+// **<optionally: Explanation of technical interfaces>**
+
+// **<Mapping Input/Output to Channels>**
+
+// <<<<
+// // 4. Solution Strategy
+// [[section-solution-strategy]]
+// == Solution Strategy
+
+
+
+// <<<<
+// // 5. Building Block View
+// [[section-building-block-view]]
+
+
+// == Building Block View
+
+
+
+// === Whitebox Overall System
+
+
+
+// _**<Overview Diagram>**_
+
+// Motivation::
+
+// _<text explanation>_
+
+
+// Contained Building Blocks::
+// _<Description of contained building block (black boxes)>_
+
+// Important Interfaces::
+// _<Description of important interfaces>_
+
+
+
+
+// ==== <Name black box 1>
+
+
+
+// _<Purpose/Responsibility>_
+
+// _<Interface(s)>_
+
+// _<(Optional) Quality/Performance Characteristics>_
+
+// _<(Optional) Directory/File Location>_
+
+// _<(Optional) Fulfilled Requirements>_
+
+// _<(optional) Open Issues/Problems/Risks>_
+
+
+
+
+// ==== <Name black box 2>
+
+// _<black box template>_
+
+// ==== <Name black box n>
+
+// _<black box template>_
+
+
+// ==== <Name interface 1>
+
+// ...
+
+// ==== <Name interface m>
+
+
+
+// === Level 2
+
+
+
+// ==== White Box _<building block 1>_
+
+
+
+// _<white box template>_
+
+// ==== White Box _<building block 2>_
+
+
+// _<white box template>_
+
+// ...
+
+// ==== White Box _<building block m>_
+
+
+// _<white box template>_
+
+
+
+// === Level 3
+
+
+
+
+// ==== White Box <_building block x.1_>
+
+
+
+
+// _<white box template>_
+
+
+// ==== White Box <_building block x.2_>
+
+// _<white box template>_
+
+
+
+// ==== White Box <_building block y.1_>
+
+// _<white box template>_
+
+
+// <<<<
+// // 6. Runtime View
+// [[section-runtime-view]]
+// == Runtime View
+
+
+
+
+// === <Runtime Scenario 1>
+
+
+// * _<insert runtime diagram or textual description of the scenario>_
+// * _<insert description of the notable aspects of the interactions between the
+// building block instances depicted in this diagram.>_
+
+// === <Runtime Scenario 2>
+
+// === ...
+
+// === <Runtime Scenario n>
+
+
+// <<<<
+// // 7. Deployment View
+// [[section-deployment-view]]
+
+
+// == Deployment View
+
+
+
+// === Infrastructure Level 1
+
+
+
+// _**<Overview Diagram>**_
+
+// Motivation::
+
+// _<explanation in text form>_
+
+// Quality and/or Performance Features::
+
+// _<explanation in text form>_
+
+// Mapping of Building Blocks to Infrastructure::
+// _<description of the mapping>_
+
+
+// === Infrastructure Level 2
+
+
+
+// ==== _<Infrastructure Element 1>_
+
+// _<diagram + explanation>_
+
+// ==== _<Infrastructure Element 2>_
+
+// _<diagram + explanation>_
+
+// ...
+
+// ==== _<Infrastructure Element n>_
+
+// _<diagram + explanation>_
+
+// <<<<
+// // 8. Concepts
+// [[section-concepts]]
+// == Cross-cutting Concepts
+
+
+
+
+
+// === _<Concept 1>_
+
+// _<explanation>_
+
+
+
+// === _<Concept 2>_
+
+// _<explanation>_
+
+// ...
+
+// === _<Concept n>_
+
+// _<explanation>_
+
+// <<<<
+// // 9. Design Decisions
+// [[section-design-decisions]]
+// == Design Decisions
+
+
+
+
+
+// <<<<
+// // 10. Quality Scenarios
+// [[section-quality-scenarios]]
+// == Quality Requirements
+
+
+// === Quality Tree
+
+
+// === Quality Scenarios
+
+
+// <<<<
+// // 11. Technical Risks
+// [[section-technical-risks]]
+// == Risks and Technical Debts
+
+
+
+<<<<
+// 12. Glossary
+[[section-glossary]]
+== Glossary
+
+
+
+
+
+[options="header"]
+|===
+| Term         | Definition
+| <Term-1>     | <definition-1>
+| <Term-2>     | <definition-2>
+|===
+
+
+***
+
+<<<<
+// 13. About arc42
+:homepage: http://arc42.org
+
+:keywords: software-architecture, documentation, template, arc42
+
+:numbered!:
+**About arc42**
+
+
+[role="lead"]
+= image:arc42-logo.png[arc42] Template
+arc42, the Template for documentation of
+software and system architecture.
+
+By Dr. Gernot Starke, Dr. Peter Hruschka and contributors.
+
+
+Template Revision: 7.0 EN (based on asciidoc), January 2017
+
+(C)
+We acknowledge that this document uses material from the
+arc 42 architecture template, http://www.arc42.de.
+Created by Dr. Peter Hruschka & Dr. Gernot Starke.
