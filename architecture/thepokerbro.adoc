@@ -68,8 +68,8 @@ A poker review software
 [options="header",cols="1,2"]
 |===
 |Role/Name|Expectations
-| _Poker Player_ | _<Expectation-1>_
-| _Software Architect_ | _<Expectation-2>_
+| _Poker Player_ | As a poker player I want to review and analyze my plays. This is mainly done when finished playing but sometimes a replay should be able just after the hand is finished.  
+| _Software Architect_ | As a software architect I want to learn something new. Interest are mainly in cloud technologies and several programming languages. The PokerBro app is used as a real life scenario to build knowledge and having fun in trying something new.
 |===
 
 
