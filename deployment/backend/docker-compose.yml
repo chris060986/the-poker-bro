@@ -1,0 +1,26 @@
+version: "3.9"
+services:
+  database:
+    image: "couchdb:3.1.1"
+    container_name: "my-poker-couch"
+    ports: 
+      - 5984:5984 
+    # env-file?
+    environment:
+      - COUCHDB_USER=admin
+      - COUCHDB_PASSWORD=admin
+    volumes: 
+      - couchdb-data:/opt/couchdb/data
+    networks: 
+      - backend-tier
+  #parser:
+  #front-end
+volumes:
+  couchdb-data:
+    external: true
+
+networks: 
+  backend-tier:
+    name: backend
+    labels:
+      com.pokerbro.description: "basic network for all backend service"
