@@ -13,14 +13,21 @@ services:
       - couchdb-data:/opt/couchdb/data
     networks: 
       - backend-tier
-  #parser:
+  parser:
+    image: chris060986/poker-hh-parser:0.0.1
+    container_name: pokerstars-parser
+    ports: 
+      - 5000:5000
+    networks: 
+      - backend-tier
   #front-end
+  # http webserver to deliver html frontend
 volumes:
   couchdb-data:
     external: true
 
 networks: 
   backend-tier:
-    name: backend
+    name: poker-bro-backend
     labels:
       com.pokerbro.description: "basic network for all backend service"
