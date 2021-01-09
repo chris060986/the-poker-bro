@@ -14,7 +14,7 @@ services:
     networks: 
       - backend-tier
   parser:
-    image: chris060986/poker-hh-parser:0.0.1
+    image: chris060986/poker-hh-parser:0.0.2
     container_name: pokerstars-parser
     ports: 
       - 5000:5000
