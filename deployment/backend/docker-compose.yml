@@ -14,12 +14,13 @@ services:
     networks: 
       - backend-tier
   parser:
-    image: chris060986/poker-hh-parser:0.0.2
+    image: chris060986/poker-hh-parser:local
     container_name: pokerstars-parser
     ports: 
       - 5000:5000
     networks: 
       - backend-tier
+      - bridge-tier
   #front-end
   # http webserver to deliver html frontend
 volumes:
@@ -31,3 +32,7 @@ networks:
     name: poker-bro-backend
     labels:
       com.pokerbro.description: "basic network for all backend service"
+  bridge-tier:
+    name: poker-bro-bridge
+    labels:
+      com.pokerbro.description: "network for bridge between shipper and backend"
