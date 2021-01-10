@@ -1,0 +1,29 @@
+version: "3.9"
+services:
+  fluentd:
+    image: "fluent/fluentd:v1.12-1"
+    container_name: "poker-hh-shipper"
+    command: ["fluentd", "-c", "/conf/td-agent.conf"]
+    ports:
+      - "24224:24224"
+      - "24224:24224/udp" 
+    # env-file /conf file as volume?
+    # environment:
+    # ugly workaround to use windows volumes  
+    volumes: 
+      - C:\Users\Chris\docker-volumes\fluentd\data:/data
+      - C:\Users\Chris\docker-volumes\fluentd\conf:/conf
+      - C:\Users\Chris\docker-volumes\fluentd\position-file:/position-file
+    networks: 
+      - client-tier
+      - bridge-tier
+
+networks: 
+  client-tier:
+    name: poker-bro-client
+    labels:
+      com.pokerbro.description: "network for the poker hand shipper and users client"
+  bridge-tier:
+    name: poker-bro-bridge
+    labels:
+      com.pokerbro.description: "network for bridge between shipper and backend"
