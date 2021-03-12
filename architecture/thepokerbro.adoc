@@ -35,12 +35,10 @@ endif::basebackend-html[]
 
 = The Poker Bro
 
-A poker review software
+Playing poker requires mathematical skills and self-discipline. By adding the possibility of winning and losing money, the psychological factor gains influence. To become a good poker player, besides practice, theoretical learning and analysis of your own game is important.
 
 // horizontal line
 ***
-
-
 
 
 // numbering from here on
@@ -50,20 +48,33 @@ A poker review software
 // 1. Introduction and Goals
 [[section-introduction-and-goals]]
 == Introduction and Goals
-
-
+The Poker Bro is a software to analyze previously played poker hands and provide the possibility to review all actions step by step. Several statistics are collected to give the reviewer an idea about the oppenents on table.
 
 === Requirements Overview
+The Poker Bro's use cases are clearly after playing a hand. It's not intended to display statistics live as on overlay on the table. The main features are:
 
+- Importing of hand history files to common format (json)
+- Storing hand history in long term
+- Possibility to replay single hands
+- Overview of profit and losses, profitable starting hands, etc
+- Additional statistics for villains, like starting hand range
+- Statistical calculations like profitability of calls
 
+Many more features can be implemented, also including artificial intelligence to make suggestions and improve the game of the hero. 
 
 === Quality Goals
 
-
+[options="header",cols="1,7,16"]
+|===
+|Nr.|Goal|Motivation
+| 1 | Fast hand history interpretation | After finishing a hand the next one is immediatly starting. With The Poker Bro the hero should be able to analyze a hand directly after is is finished. The timeframe from processing the textfile with hand history until it shows up in the gui must not be longer than 5 seconds.
+| 2 | No hand data loss | Every hand is important to build statistics and allows to understand if the hero is playing poker profitable or not.
+| 3 | Add additional poker rooms | Additional or new poker rooms can easily adopted to the ecosystem
+| 4 | Cloud ready | In principle The Poker Bro should be runnable in a public cloud. An exception is only allowed for the shipper which imports hand history. This Quality Goal is mainly driven by the stakeholder software architect.
+| 5 | Easy to use | The ui of The Poker Bro is easy to use and follows common design und usability criterias.
+|===
 
 === Stakeholders
-
-
 
 [options="header",cols="1,2"]
 |===
@@ -345,15 +356,12 @@ A poker review software
 [[section-glossary]]
 == Glossary
 
-
-
-
-
 [options="header"]
 |===
 | Term         | Definition
-| <Term-1>     | <definition-1>
-| <Term-2>     | <definition-2>
+| hero     | The poker player himself, who makes the decisions and actions.
+| vaillain     | Other poker players on a table, playing against the hero.
+| starting hand | The two cards a poker players receives at the beginning of a round.
 |===
 
 
