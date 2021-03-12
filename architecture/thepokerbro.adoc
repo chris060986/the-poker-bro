@@ -324,12 +324,29 @@ Many more features can be implemented, also including artificial intelligence to
 // _<explanation>_
 
 // <<<<
-// // 9. Design Decisions
-// [[section-design-decisions]]
-// == Design Decisions
+// 9. Design Decisions
+[[section-design-decisions]]
+== Design Decisions
+
+=== Database implementation
+- nosql (document oriented) vs sql
+- database connectors in different languages
+- rest endpoint
+
+=> couchdb
 
 
+=== Frontend framework
+- Javascript
+- Angular vs React vs Vue
+- Market share
 
+=> React
+
+=== Cloud provider
+AWS vs. Azure vs GKE vs. ??  
+
+to be done!
 
 
 // <<<<
@@ -345,11 +362,17 @@ Many more features can be implemented, also including artificial intelligence to
 
 
 // <<<<
-// // 11. Technical Risks
-// [[section-technical-risks]]
-// == Risks and Technical Debts
+// 11. Technical Risks
+[[section-technical-risks]]
+== Risks and Technical Debts
 
+=== Fast changing poker rooms 
+new players without possibility to save hand history (GGPoker)
 
+=== additional gaming modes generate changes and raise complexity
+new games like rush poker, play-it-twice, all-in-cash-outs 
+
+=> Adaption of hand history text files
 
 <<<<
 // 12. Glossary
