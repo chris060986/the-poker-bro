@@ -90,10 +90,11 @@ Many more features can be implemented, also including artificial intelligence to
 // == Architecture Constraints
 
 // <<<<
-// // 3. System Scope and Context
-// [[section-system-scope-and-context]]
-// == System Scope and Context
-
+// 3. System Scope and Context
+[[section-system-scope-and-context]]
+== System Scope and Context
+[role="lead"]
+= image:businessContext.png[Business Context]
 
 // === Business Context
 
