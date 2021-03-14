@@ -93,17 +93,34 @@ Many more features can be implemented, also including artificial intelligence to
 // 3. System Scope and Context
 [[section-system-scope-and-context]]
 == System Scope and Context
-[role="lead"]
-= image:businessContext.png[Business Context]
+This chapter describes the environment and context of The Poker Bro. Who's the user of it and what are systems it's depending on.
 
-// === Business Context
+=== Business Context
+image:businessContext.png[Business Context] 
+
+**Poker Player (Hero)**
+
+The Hero is the user user of The Poker Bro. He plays poker at poker rooms like pokerstars and is interested to improve his game. Additional to theretical learning he analysis his decisions after playing.
+
+**Other Poker Players (Villains)**
+
+The opponents of the hero. They also play poker at the same platform and try to beat the hero. It's interesting for the hero to collect statitics about them.
+
+**Poker Room (Pokerstars)**
+
+The poker room provides a platform to bring the hero and villains together and play poker against each other. All around money handling and play is concentrated here and not part of The Poker Bro.
+
+**Hand History**
+
+The hand history is a text document of every dealt hand on a poker room, in which the hero is involved. It protocols every step (bet, call, raise, flop cards) in a humand readable format on disk. The Poker Bro using it as data source.
+
+**External Systems**
+
+Third party systems should be used to avoid implementation of equity calculations. Different use cases are possible and the app can be extended.
 
 
-// **<Diagram or Table>**
-
-// **<optionally: Explanation of external domain interfaces>**
-
-// === Technical Context
+// Technical Context
+//=== Technical Context
 
 
 // **<Diagram or Table>**
